@@ -10,9 +10,7 @@ public static void main(String[] args) { {
         double sum = 0.0;
             char question;
                 double[]sales=new double[12];         
-
          do{   
-
             int i=1;    
             System.out.println("Enter  Month:"   );
             month = keyboard.nextInt();
@@ -21,14 +19,11 @@ public static void main(String[] args) { {
                 question =0;
                    System.out.println("Enter more sales Y/N:"  );  
                    question=keyboard.next().charAt(0);  
-
                       sum +=sales[i];
-
                }
-    while ( question == 'Y');
-
-       System.out.println("totale sales :"+ sum  );
-        System.out.println("Average sales :"+ sum/12  );    
-
+     while ( question == 'Y');
+       System.out.println("total sales:"+ sum);
+        System.out.println("Average sales:" + sum/12);
+        
      }
   }
